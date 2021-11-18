@@ -34,8 +34,8 @@
   },
   "homepage": "https://github.com/therebelrobot/countryjs",
   "dependencies": {
-    "bulk-require": "^1.0.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "require-all": "^2.2.0"
   },
   "devDependencies": {}
 }
