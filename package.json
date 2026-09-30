@@ -21,9 +21,9 @@
     "lib",
     "data"
   ],
-  "engines": [
-    "node"
-  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "mocha test/*.test.js"
   },
