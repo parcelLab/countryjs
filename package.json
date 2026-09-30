@@ -1,6 +1,6 @@
 {
-  "name": "countryjs",
-  "version": "1.8.0",
+  "name": "@parcellab/countryjs",
+  "version": "0.0.0-semantic-release",
   "description": "A utility library for returning country data, ISO info and states/provinces within them.",
   "main": "index.js",
   "author": "Trent Oswald <trentoswald@therebelrobot.com> (http://therebelrobot.com)",
@@ -12,13 +12,20 @@
     "Loris Guignard <loris.guignard@gmail.com> [@loris]",
     "Brandon Copley <copley.brandon@gmail.com> [@brandoncopley]"
   ],
-  "repository": "progressclaim/countryjs",
+  "repository": "https://github.com/parcelLab/countryjs",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "data"
+  ],
   "engines": [
     "node"
   ],
   "scripts": {
-    "pretest": "./node_modules/standard/bin/cmd.js",
-    "test": "./node_modules/istanbul/lib/cli.js cover _mocha --"
+    "test": "mocha test/*.test.js"
   },
   "keywords": [
     "country",
@@ -37,5 +44,8 @@
     "lodash": "^4.18.1",
     "require-all": "^2.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "4.5.0",
+    "mocha": "12.0.2"
+  }
 }
